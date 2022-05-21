@@ -4,16 +4,11 @@ using AcrylicUI.Forms;
 using AcrylicUI.Resources;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace App2AcrylicUI
+namespace App3AcrylicUI
 {
     public partial class Form1 : AcrylicForm
     {
@@ -31,11 +26,26 @@ namespace App2AcrylicUI
 
             bool _isWindows11 = true;
             RoundCorners(_isWindows11);
-
-
         }
 
-       
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+            var dpiScale = IconFactory.GetDpiScale(this.Handle);
+            this.windowPanel1.Icon = new IconFactory(IconFactory.GetDpiScale(Handle)).BitmapFromSvg(Icons.Cube_16x_svg);
+            this.windowPanel1.SectionHeader = "CT Studio";
+            this.windowPanel1.IsAcrylicEnabled = true;
+            
+            this.BackColor = Colors.GreyBackground;
+
+            // Main App Setup
+            LoadMicTab();
+            LoadMicProfiles();
+            LoadMicSetup();
+        }
+
+        #region Borderless
+
+        #region fix FormWindowState changes
 
 
         private void SetupUIDefaults()
@@ -45,26 +55,24 @@ namespace App2AcrylicUI
             this.FormBorderStyle = FormBorderStyle.Sizable;
             this.Size = designSize;
             this._restoreSize = designSize; // save for restore
-            // Glass Effect
-
-            this.BlurOpacity = 1;
-            this.BlurColor = Colors.GreyBackground;
-            this.windowPanel1.IsAcrylicEnabled = true;
         }
 
         private void HookEvents()
         {
             this.Load += new System.EventHandler(this.MainWindow_Load);
+            this.Activated += new System.EventHandler(this.Form1_Activated);
+            this.Deactivate += new System.EventHandler(this.Form1_Deactivate);
+
         }
 
-        private void MainWindow_Load(object sender, EventArgs e)
-        {
-            var dpiScale = IconFactory.GetDpiScale(this.Handle);
-            this.windowPanel1.Icon = new IconFactory(IconFactory.GetDpiScale(Handle)).BitmapFromSvg(Icons.Cube_16x_svg);
-            this.windowPanel1.SectionHeader = "CT Studio";
-        }
 
-        #region fix FormWindowState changes
+
+
+
+
+        #endregion
+
+        #region Min/Max/Restore for catching resize events to adjust form
 
         private void BtnMaximize_Click(object sender, EventArgs e)
         {
@@ -72,10 +80,6 @@ namespace App2AcrylicUI
             this.WindowState = (this.WindowState == FormWindowState.Normal ? FormWindowState.Maximized : FormWindowState.Normal);
             AdjustForm();
         }
-
-        #endregion
-
-        #region Min/Max/Restore for catching resize events to adjust form
 
         private void BtnMin_Click(object sender, EventArgs e)
         {
@@ -140,9 +144,6 @@ namespace App2AcrylicUI
         #endregion
 
         #region Window, No Border Hacks
-
-
-
 
         protected override void WndProc(ref Message message)
         {
@@ -263,5 +264,50 @@ namespace App2AcrylicUI
 
         #endregion
 
+        #endregion
+
+        private void LoadMicTab()
+        {          
+
+        }
+
+        private void btn1_Mic_Click(object sender, EventArgs e)
+        {
+            LoadMicProfiles();
+        }
+
+        private void LoadMicProfiles()
+        {
+            panel3.BackColor = Color.Black;
+            this.acrylicListView1.Items.Clear();
+            var profiles = new List<String> { "AKG Condenser", "DEFAULT", "Sennheiser ew 100G3", "Shure SM7b Flat", "Shure SM7B" };
+
+            profiles.ForEach(p => acrylicListView1.Items.Add(new AcrylicListItem(Text = p)));
+        }
+
+        private void LoadMicSetup()
+        {
+            this.acrylicListView2.Items.Clear();
+            var profiles = new List<String> {
+                "Mic Type: Dynamic",
+                "Gain: 68dB",
+                "Level: 32db" };
+
+            profiles.ForEach(p => acrylicListView2.Items.Add(new AcrylicListItem(Text = p)));
+        }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            this.windowPanel1.IsAcrylicEnabled = true;
+            Refresh();
+        }
+
+        private void Form1_Deactivate(object sender, EventArgs e)
+        {
+            this.windowPanel1.IsAcrylicEnabled = false;
+            Refresh();
+        }
+
+      
     }
 }

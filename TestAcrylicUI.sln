@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App1AcrylicUI", "App1AcrylicUI\App1AcrylicUI.csproj", "{868F99BA-C942-4171-94BF-8B8822E11E35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App1AcrylicUI", "App1AcrylicUI\App1AcrylicUI.csproj", "{868F99BA-C942-4171-94BF-8B8822E11E35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App2AcrylicUI", "App2AcrylicUI\App2AcrylicUI.csproj", "{FBB3631F-5287-4382-B0DE-1A74995235FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App2AcrylicUI", "App2AcrylicUI\App2AcrylicUI.csproj", "{FBB3631F-5287-4382-B0DE-1A74995235FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App3AcrylicUI", "App3AcrylicUI\App3AcrylicUI.csproj", "{23C0FFE5-AB9A-48B8-B11D-A70E013FE4BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcrylicUI", "..\GitHub\colhountech\AcrylicUI\AcrylicUI\AcrylicUI.csproj", "{3284C9F6-2E3A-427F-8DAF-460D0AD3C9EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{FBB3631F-5287-4382-B0DE-1A74995235FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBB3631F-5287-4382-B0DE-1A74995235FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBB3631F-5287-4382-B0DE-1A74995235FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23C0FFE5-AB9A-48B8-B11D-A70E013FE4BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23C0FFE5-AB9A-48B8-B11D-A70E013FE4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23C0FFE5-AB9A-48B8-B11D-A70E013FE4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23C0FFE5-AB9A-48B8-B11D-A70E013FE4BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3284C9F6-2E3A-427F-8DAF-460D0AD3C9EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3284C9F6-2E3A-427F-8DAF-460D0AD3C9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3284C9F6-2E3A-427F-8DAF-460D0AD3C9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3284C9F6-2E3A-427F-8DAF-460D0AD3C9EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
