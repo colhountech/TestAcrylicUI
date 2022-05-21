@@ -197,13 +197,13 @@ namespace App3AcrylicUI
             if (!_flatBorder)
                 return;
 
-            var g = e.Graphics;
+            //var g = e.Graphics;
 
-            using (var p = new Pen(Colors.DarkBorder))
-            {
-                var modRect = new Rectangle(ClientRectangle.Location, new Size(ClientRectangle.Width - 1, ClientRectangle.Height - 1));
-                g.DrawRectangle(p, modRect);
-            }
+            //using (var p = new Pen(Colors.DarkBorder))
+            //{
+            //    var modRect = new Rectangle(ClientRectangle.Location, new Size(ClientRectangle.Width - 1, ClientRectangle.Height - 1));
+            //    g.DrawRectangle(p, modRect);
+            //}
         }
 
         [DllImport("user32.dll")]
