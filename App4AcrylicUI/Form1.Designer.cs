@@ -44,6 +44,8 @@
             this.acrylicListView1 = new AcrylicUI.Controls.AcrylicListView();
             this.acrylicPanel7 = new AcrylicUI.Controls.AcrylicPanel();
             this.acrylicListView2 = new AcrylicUI.Controls.AcrylicListView();
+            this.acrylicPanel8 = new AcrylicUI.Controls.AcrylicPanel();
+            this.acrylicListView3 = new AcrylicUI.Controls.AcrylicListView();
             this.acrylicPanel1.SuspendLayout();
             this.acrylicPanel2.SuspendLayout();
             this.acrylicPanel3.SuspendLayout();
@@ -52,6 +54,7 @@
             this.acrylicPanel6.SuspendLayout();
             this.acrylicSectionPanel1.SuspendLayout();
             this.acrylicPanel7.SuspendLayout();
+            this.acrylicPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // acrylicPanel1
@@ -198,22 +201,44 @@
             // acrylicPanel7
             // 
             this.acrylicPanel7.Controls.Add(this.acrylicListView2);
-            this.acrylicPanel7.Location = new System.Drawing.Point(237, 298);
+            this.acrylicPanel7.Location = new System.Drawing.Point(665, 25);
             this.acrylicPanel7.Name = "acrylicPanel7";
             this.acrylicPanel7.Padding = new System.Windows.Forms.Padding(1, 25, 1, 1);
-            this.acrylicPanel7.Size = new System.Drawing.Size(409, 242);
+            this.acrylicPanel7.Size = new System.Drawing.Size(206, 251);
             this.acrylicPanel7.TabIndex = 6;
             // 
             // acrylicListView2
             // 
+            this.acrylicListView2.AlternateBackground = false;
             this.acrylicListView2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.acrylicListView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.acrylicListView2.Location = new System.Drawing.Point(1, 25);
             this.acrylicListView2.Name = "acrylicListView2";
             this.acrylicListView2.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
-            this.acrylicListView2.Size = new System.Drawing.Size(407, 216);
+            this.acrylicListView2.Size = new System.Drawing.Size(204, 225);
             this.acrylicListView2.TabIndex = 1;
             this.acrylicListView2.Text = "acrylicListView2";
+            // 
+            // acrylicPanel8
+            // 
+            this.acrylicPanel8.Controls.Add(this.acrylicListView3);
+            this.acrylicPanel8.Location = new System.Drawing.Point(237, 303);
+            this.acrylicPanel8.Name = "acrylicPanel8";
+            this.acrylicPanel8.Padding = new System.Windows.Forms.Padding(1, 25, 1, 1);
+            this.acrylicPanel8.Size = new System.Drawing.Size(633, 237);
+            this.acrylicPanel8.TabIndex = 7;
+            // 
+            // acrylicListView3
+            // 
+            this.acrylicListView3.AlternateBackground = false;
+            this.acrylicListView3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.acrylicListView3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.acrylicListView3.Location = new System.Drawing.Point(1, 25);
+            this.acrylicListView3.Name = "acrylicListView3";
+            this.acrylicListView3.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.acrylicListView3.Size = new System.Drawing.Size(631, 211);
+            this.acrylicListView3.TabIndex = 1;
+            this.acrylicListView3.Text = "acrylicListView3";
             // 
             // Form1
             // 
@@ -221,6 +246,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BlurColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(902, 552);
+            this.Controls.Add(this.acrylicPanel8);
             this.Controls.Add(this.acrylicSectionPanel1);
             this.Controls.Add(this.acrylicPanel6);
             this.Controls.Add(this.acrylicPanel5);
@@ -241,6 +267,7 @@
             this.acrylicPanel6.ResumeLayout(false);
             this.acrylicSectionPanel1.ResumeLayout(false);
             this.acrylicPanel7.ResumeLayout(false);
+            this.acrylicPanel8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -263,5 +290,7 @@
         private AcrylicUI.Controls.AcrylicPanel acrylicPanel7;
         private AcrylicUI.Controls.AcrylicListView acrylicListView1;
         private AcrylicUI.Controls.AcrylicListView acrylicListView2;
+        private AcrylicUI.Controls.AcrylicPanel acrylicPanel8;
+        private AcrylicUI.Controls.AcrylicListView acrylicListView3;
     }
 }
