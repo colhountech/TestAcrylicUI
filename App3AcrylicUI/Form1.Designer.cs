@@ -31,31 +31,29 @@ namespace App3AcrylicUI
         private void InitializeComponent()
         {
             this.windowPanel1 = new AcrylicUI.Controls.WindowPanel();
-            this.boxControl1 = new AcrylicUI.Controls.BoxControl();
-            this.acrylicSectionPanel2 = new DarkUI.Controls.AcrylicSectionPanel();
-            this.acrylicListView2 = new AcrylicUI.Controls.AcrylicListView();
-            this.btn1_Mic = new AcrylicUI.Controls.AcrylicButton();
-            this.acrylicSectionPanel1 = new DarkUI.Controls.AcrylicSectionPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.acrylicPanel1 = new AcrylicUI.Controls.AcrylicPanel();
             this.acrylicListView1 = new AcrylicUI.Controls.AcrylicListView();
+            this.acrylicLabel2 = new AcrylicUI.Controls.AcrylicLabel();
+            this.btn1_Mic = new AcrylicUI.Controls.AcrylicButton();
             this.acrylicButton5 = new AcrylicUI.Controls.AcrylicButton();
             this.acrylicButton2 = new AcrylicUI.Controls.AcrylicButton();
             this.acrylicButton1 = new AcrylicUI.Controls.AcrylicButton();
             this.acrylicButton3 = new AcrylicUI.Controls.AcrylicButton();
             this.acrylicButton4 = new AcrylicUI.Controls.AcrylicButton();
             this.acrylicContextMenu1 = new AcrylicUI.Controls.AcrylicContextMenu();
+            this.acrylicPanel2 = new AcrylicUI.Controls.AcrylicPanel();
+            this.acrylicListView2 = new AcrylicUI.Controls.AcrylicListView();
+            this.acrylicLabel3 = new AcrylicUI.Controls.AcrylicLabel();
             this.windowPanel1.SuspendLayout();
-            this.acrylicSectionPanel2.SuspendLayout();
-            this.acrylicSectionPanel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.acrylicPanel1.SuspendLayout();
+            this.acrylicPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // windowPanel1
             // 
-            this.windowPanel1.Controls.Add(this.boxControl1);
-            this.windowPanel1.Controls.Add(this.acrylicSectionPanel2);
+            this.windowPanel1.Controls.Add(this.acrylicPanel2);
+            this.windowPanel1.Controls.Add(this.acrylicPanel1);
             this.windowPanel1.Controls.Add(this.btn1_Mic);
-            this.windowPanel1.Controls.Add(this.acrylicSectionPanel1);
             this.windowPanel1.Controls.Add(this.acrylicButton5);
             this.windowPanel1.Controls.Add(this.acrylicButton2);
             this.windowPanel1.Controls.Add(this.acrylicButton1);
@@ -72,38 +70,40 @@ namespace App3AcrylicUI
             this.windowPanel1.Size = new System.Drawing.Size(1027, 573);
             this.windowPanel1.TabIndex = 0;
             // 
-            // boxControl1
+            // acrylicPanel1
             // 
-            this.boxControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.boxControl1.DefaultDockArea = AcrylicUI.Docking.DockArea.None;
-            this.boxControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.boxControl1.DockText = null;
-            this.boxControl1.Icon = null;
-            this.boxControl1.Location = new System.Drawing.Point(1, 25);
-            this.boxControl1.Name = "boxControl1";
-            this.boxControl1.SerializationKey = null;
-            this.boxControl1.Size = new System.Drawing.Size(219, 547);
-            this.boxControl1.TabIndex = 21;
+            this.acrylicPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.acrylicPanel1.Controls.Add(this.acrylicListView1);
+            this.acrylicPanel1.Controls.Add(this.acrylicLabel2);
+            this.acrylicPanel1.Location = new System.Drawing.Point(783, 73);
+            this.acrylicPanel1.Margin = new System.Windows.Forms.Padding(0, 100, 0, 0);
+            this.acrylicPanel1.Name = "acrylicPanel1";
+            this.acrylicPanel1.Padding = new System.Windows.Forms.Padding(1, 25, 1, 1);
+            this.acrylicPanel1.Size = new System.Drawing.Size(243, 499);
+            this.acrylicPanel1.TabIndex = 21;
             // 
-            // acrylicSectionPanel2
+            // acrylicListView1
             // 
-            this.acrylicSectionPanel2.Controls.Add(this.acrylicListView2);
-            this.acrylicSectionPanel2.Location = new System.Drawing.Point(668, 176);
-            this.acrylicSectionPanel2.Name = "acrylicSectionPanel2";
-            this.acrylicSectionPanel2.SectionHeader = "Mic Setup";
-            this.acrylicSectionPanel2.Size = new System.Drawing.Size(142, 279);
-            this.acrylicSectionPanel2.TabIndex = 20;
+            this.acrylicListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.acrylicListView1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.acrylicListView1.Location = new System.Drawing.Point(1, 48);
+            this.acrylicListView1.Margin = new System.Windows.Forms.Padding(12);
+            this.acrylicListView1.Name = "acrylicListView1";
+            this.acrylicListView1.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.acrylicListView1.Size = new System.Drawing.Size(241, 141);
+            this.acrylicListView1.TabIndex = 14;
+            this.acrylicListView1.Text = "acrylicListView1";
             // 
-            // acrylicListView2
+            // acrylicLabel2
             // 
-            this.acrylicListView2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.acrylicListView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.acrylicListView2.Location = new System.Drawing.Point(1, 25);
-            this.acrylicListView2.Name = "acrylicListView2";
-            this.acrylicListView2.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
-            this.acrylicListView2.Size = new System.Drawing.Size(140, 253);
-            this.acrylicListView2.TabIndex = 14;
-            this.acrylicListView2.Text = "acrylicListView2";
+            this.acrylicLabel2.BackColor = System.Drawing.Color.Black;
+            this.acrylicLabel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.acrylicLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.acrylicLabel2.Location = new System.Drawing.Point(1, 25);
+            this.acrylicLabel2.Name = "acrylicLabel2";
+            this.acrylicLabel2.Size = new System.Drawing.Size(241, 23);
+            this.acrylicLabel2.TabIndex = 15;
+            this.acrylicLabel2.Text = "Mic Profile";
             // 
             // btn1_Mic
             // 
@@ -111,7 +111,7 @@ namespace App3AcrylicUI
             this.btn1_Mic.Default = false;
             this.btn1_Mic.HasRoundedCorners = false;
             this.btn1_Mic.ImagePadding = 6;
-            this.btn1_Mic.Location = new System.Drawing.Point(306, 176);
+            this.btn1_Mic.Location = new System.Drawing.Point(33, 73);
             this.btn1_Mic.Margin = new System.Windows.Forms.Padding(0);
             this.btn1_Mic.Name = "btn1_Mic";
             this.btn1_Mic.Padding = new System.Windows.Forms.Padding(10);
@@ -120,44 +120,12 @@ namespace App3AcrylicUI
             this.btn1_Mic.Text = "Mic";
             this.btn1_Mic.UseVisualStyleBackColor = false;
             // 
-            // acrylicSectionPanel1
-            // 
-            this.acrylicSectionPanel1.Controls.Add(this.panel3);
-            this.acrylicSectionPanel1.Location = new System.Drawing.Point(413, 73);
-            this.acrylicSectionPanel1.Name = "acrylicSectionPanel1";
-            this.acrylicSectionPanel1.SectionHeader = "Mic Profiles";
-            this.acrylicSectionPanel1.Size = new System.Drawing.Size(200, 282);
-            this.acrylicSectionPanel1.TabIndex = 12;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.acrylicListView1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(1, 25);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(4);
-            this.panel3.Size = new System.Drawing.Size(198, 256);
-            this.panel3.TabIndex = 14;
-            // 
-            // acrylicListView1
-            // 
-            this.acrylicListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.acrylicListView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.acrylicListView1.Location = new System.Drawing.Point(4, 4);
-            this.acrylicListView1.Margin = new System.Windows.Forms.Padding(12);
-            this.acrylicListView1.Name = "acrylicListView1";
-            this.acrylicListView1.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
-            this.acrylicListView1.Size = new System.Drawing.Size(190, 248);
-            this.acrylicListView1.TabIndex = 13;
-            this.acrylicListView1.Text = "acrylicListView1";
-            // 
             // acrylicButton5
             // 
             this.acrylicButton5.Default = false;
             this.acrylicButton5.HasRoundedCorners = false;
             this.acrylicButton5.ImagePadding = 6;
-            this.acrylicButton5.Location = new System.Drawing.Point(306, 356);
+            this.acrylicButton5.Location = new System.Drawing.Point(33, 253);
             this.acrylicButton5.Name = "acrylicButton5";
             this.acrylicButton5.Padding = new System.Windows.Forms.Padding(6);
             this.acrylicButton5.Size = new System.Drawing.Size(104, 32);
@@ -170,7 +138,7 @@ namespace App3AcrylicUI
             this.acrylicButton2.Default = false;
             this.acrylicButton2.HasRoundedCorners = false;
             this.acrylicButton2.ImagePadding = 6;
-            this.acrylicButton2.Location = new System.Drawing.Point(306, 221);
+            this.acrylicButton2.Location = new System.Drawing.Point(33, 118);
             this.acrylicButton2.Margin = new System.Windows.Forms.Padding(0);
             this.acrylicButton2.Name = "acrylicButton2";
             this.acrylicButton2.Padding = new System.Windows.Forms.Padding(10);
@@ -184,7 +152,7 @@ namespace App3AcrylicUI
             this.acrylicButton1.Default = false;
             this.acrylicButton1.HasRoundedCorners = false;
             this.acrylicButton1.ImagePadding = 6;
-            this.acrylicButton1.Location = new System.Drawing.Point(306, 401);
+            this.acrylicButton1.Location = new System.Drawing.Point(33, 298);
             this.acrylicButton1.Name = "acrylicButton1";
             this.acrylicButton1.Padding = new System.Windows.Forms.Padding(6);
             this.acrylicButton1.Size = new System.Drawing.Size(104, 32);
@@ -197,7 +165,7 @@ namespace App3AcrylicUI
             this.acrylicButton3.Default = false;
             this.acrylicButton3.HasRoundedCorners = false;
             this.acrylicButton3.ImagePadding = 6;
-            this.acrylicButton3.Location = new System.Drawing.Point(306, 266);
+            this.acrylicButton3.Location = new System.Drawing.Point(33, 163);
             this.acrylicButton3.Name = "acrylicButton3";
             this.acrylicButton3.Padding = new System.Windows.Forms.Padding(6);
             this.acrylicButton3.Size = new System.Drawing.Size(104, 32);
@@ -210,7 +178,7 @@ namespace App3AcrylicUI
             this.acrylicButton4.Default = false;
             this.acrylicButton4.HasRoundedCorners = false;
             this.acrylicButton4.ImagePadding = 6;
-            this.acrylicButton4.Location = new System.Drawing.Point(306, 311);
+            this.acrylicButton4.Location = new System.Drawing.Point(33, 208);
             this.acrylicButton4.Name = "acrylicButton4";
             this.acrylicButton4.Padding = new System.Windows.Forms.Padding(6);
             this.acrylicButton4.Size = new System.Drawing.Size(104, 32);
@@ -226,9 +194,42 @@ namespace App3AcrylicUI
             this.acrylicContextMenu1.Name = "acrylicContextMenu1";
             this.acrylicContextMenu1.Size = new System.Drawing.Size(61, 4);
             // 
+            // acrylicPanel2
+            // 
+            this.acrylicPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.acrylicPanel2.Controls.Add(this.acrylicListView2);
+            this.acrylicPanel2.Controls.Add(this.acrylicLabel3);
+            this.acrylicPanel2.Location = new System.Drawing.Point(553, 73);
+            this.acrylicPanel2.Name = "acrylicPanel2";
+            this.acrylicPanel2.Padding = new System.Windows.Forms.Padding(1, 25, 1, 1);
+            this.acrylicPanel2.Size = new System.Drawing.Size(200, 500);
+            this.acrylicPanel2.TabIndex = 22;
+            // 
+            // acrylicListView2
+            // 
+            this.acrylicListView2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.acrylicListView2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.acrylicListView2.Location = new System.Drawing.Point(1, 48);
+            this.acrylicListView2.Name = "acrylicListView2";
+            this.acrylicListView2.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.acrylicListView2.Size = new System.Drawing.Size(198, 157);
+            this.acrylicListView2.TabIndex = 17;
+            this.acrylicListView2.Text = "acrylicListView2";
+            // 
+            // acrylicLabel3
+            // 
+            this.acrylicLabel3.BackColor = System.Drawing.Color.Black;
+            this.acrylicLabel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.acrylicLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.acrylicLabel3.Location = new System.Drawing.Point(1, 25);
+            this.acrylicLabel3.Name = "acrylicLabel3";
+            this.acrylicLabel3.Size = new System.Drawing.Size(198, 23);
+            this.acrylicLabel3.TabIndex = 18;
+            this.acrylicLabel3.Text = "Mic Setup";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BlurColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1027, 573);
@@ -237,9 +238,8 @@ namespace App3AcrylicUI
             this.Name = "Form1";
             this.Text = "Form1";
             this.windowPanel1.ResumeLayout(false);
-            this.acrylicSectionPanel2.ResumeLayout(false);
-            this.acrylicSectionPanel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.acrylicPanel1.ResumeLayout(false);
+            this.acrylicPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -248,17 +248,18 @@ namespace App3AcrylicUI
 
         private AcrylicUI.Controls.WindowPanel windowPanel1;
         private AcrylicUI.Controls.AcrylicContextMenu acrylicContextMenu1;
-        private DarkUI.Controls.AcrylicSectionPanel acrylicSectionPanel1;
-        private System.Windows.Forms.Panel panel3;
-        private AcrylicUI.Controls.AcrylicListView acrylicListView1;
         private AcrylicUI.Controls.AcrylicButton btn1_Mic;
         private AcrylicUI.Controls.AcrylicButton acrylicButton1;
         private AcrylicUI.Controls.AcrylicButton acrylicButton2;
         private AcrylicUI.Controls.AcrylicButton acrylicButton3;
         private AcrylicUI.Controls.AcrylicButton acrylicButton5;
         private AcrylicUI.Controls.AcrylicButton acrylicButton4;
-        private DarkUI.Controls.AcrylicSectionPanel acrylicSectionPanel2;
+        private AcrylicUI.Controls.AcrylicPanel acrylicPanel1;
+        private AcrylicUI.Controls.AcrylicListView acrylicListView1;
+        private AcrylicUI.Controls.AcrylicTransparentLabel acrylicLabel1;
+        private AcrylicUI.Controls.AcrylicLabel acrylicLabel2;
+        private AcrylicUI.Controls.AcrylicPanel acrylicPanel2;
         private AcrylicUI.Controls.AcrylicListView acrylicListView2;
-        private AcrylicUI.Controls.BoxControl boxControl1;
+        private AcrylicUI.Controls.AcrylicLabel acrylicLabel3;
     }
 }

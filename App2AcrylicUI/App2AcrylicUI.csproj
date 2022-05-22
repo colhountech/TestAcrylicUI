@@ -8,9 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AcrylicUI" Version="1.0.0-preview2" />
+    <ProjectReference Include="..\..\GitHub\colhountech\AcrylicUI\AcrylicUI\AcrylicUI.csproj" />
   </ItemGroup>
-
 
 
 </Project>

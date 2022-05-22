@@ -47,9 +47,13 @@ namespace App2AcrylicUI
             this._restoreSize = designSize; // save for restore
             // Glass Effect
 
-            this.BlurOpacity = 1;
+            // Set this to 1 to make the form more 'glassy'
+            //this.BlurOpacity = 1;
             this.BlurColor = Colors.GreyBackground;
             this.windowPanel1.IsAcrylicEnabled = true;
+
+            // set minimum size
+           this.MinimumSize = Size;
         }
 
         private void HookEvents()
@@ -196,13 +200,13 @@ namespace App2AcrylicUI
             if (!_flatBorder)
                 return;
 
-            var g = e.Graphics;
+            //var g = e.Graphics;
 
-            using (var p = new Pen(Colors.DarkBorder))
-            {
-                var modRect = new Rectangle(ClientRectangle.Location, new Size(ClientRectangle.Width - 1, ClientRectangle.Height - 1));
-                g.DrawRectangle(p, modRect);
-            }
+            //using (var p = new Pen(Colors.DarkBorder))
+            //{
+            //    var modRect = new Rectangle(ClientRectangle.Location, new Size(ClientRectangle.Width - 1, ClientRectangle.Height - 1));
+            //    g.DrawRectangle(p, modRect);
+            //}
         }
 
         [DllImport("user32.dll")]

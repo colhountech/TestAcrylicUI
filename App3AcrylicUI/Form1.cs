@@ -278,7 +278,6 @@ namespace App3AcrylicUI
 
         private void LoadMicProfiles()
         {
-            panel3.BackColor = Color.Black;
             this.acrylicListView1.Items.Clear();
             var profiles = new List<String> { "AKG Condenser", "DEFAULT", "Sennheiser ew 100G3", "Shure SM7b Flat", "Shure SM7B" };
 
