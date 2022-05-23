@@ -92,8 +92,12 @@ namespace App4AcrylicUI
             };
             projects.ForEach(p =>
             {
-                var item = new AcrylicListItem(p);            
-                item.Icon = IconChar.Youtube.ToBitmap(IconFont.Brands, color: Color.Red, size:16 );
+                var item = new AcrylicListItem(p);
+                
+                var scale = IconFactory.GetDpiScale(this.Handle);
+                var icon = IconChar.Youtube.ToBitmap(IconFont.Brands, color: Color.Red, size:  (int)(16f * scale) );
+                item.Icon = icon;
+                
                 acrylicListView3.Items.Add(item);
             });
 
