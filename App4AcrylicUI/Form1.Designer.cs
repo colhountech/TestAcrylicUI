@@ -45,6 +45,8 @@
             this.acrylicPanel8 = new AcrylicUI.Controls.AcrylicPanel();
             this.acrylicListView3 = new AcrylicUI.Controls.AcrylicListView();
             this.acrylicListView1 = new AcrylicUI.Controls.AcrylicListView();
+            this.acrylicPanel9 = new AcrylicUI.Controls.AcrylicPanel();
+            this.acrylicLabel7 = new AcrylicUI.Controls.AcrylicLabel();
             this.acrylicPanel1.SuspendLayout();
             this.acrylicPanel2.SuspendLayout();
             this.acrylicPanel3.SuspendLayout();
@@ -53,6 +55,7 @@
             this.acrylicPanel6.SuspendLayout();
             this.acrylicPanel7.SuspendLayout();
             this.acrylicPanel8.SuspendLayout();
+            this.acrylicPanel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // acrylicPanel1
@@ -221,19 +224,42 @@
             // 
             this.acrylicListView1.AlternateBackground = false;
             this.acrylicListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.acrylicListView1.Location = new System.Drawing.Point(23, 25);
+            this.acrylicListView1.Location = new System.Drawing.Point(23, 101);
             this.acrylicListView1.Name = "acrylicListView1";
             this.acrylicListView1.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
-            this.acrylicListView1.Size = new System.Drawing.Size(198, 514);
+            this.acrylicListView1.Size = new System.Drawing.Size(198, 438);
             this.acrylicListView1.TabIndex = 8;
             this.acrylicListView1.Text = "acrylicListView1";
             // 
+            // acrylicPanel9
+            // 
+            this.acrylicPanel9.BackColor = System.Drawing.Color.Transparent;
+            this.acrylicPanel9.Controls.Add(this.acrylicLabel7);
+            this.acrylicPanel9.ForeColor = System.Drawing.Color.Transparent;
+            this.acrylicPanel9.Location = new System.Drawing.Point(23, 25);
+            this.acrylicPanel9.Name = "acrylicPanel9";
+            this.acrylicPanel9.Padding = new System.Windows.Forms.Padding(1, 25, 1, 1);
+            this.acrylicPanel9.Size = new System.Drawing.Size(200, 70);
+            this.acrylicPanel9.TabIndex = 9;
+            // 
+            // acrylicLabel7
+            // 
+            this.acrylicLabel7.AutoSize = true;
+            this.acrylicLabel7.Font = new System.Drawing.Font("Segoe UI Variable Static Small ", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.acrylicLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.acrylicLabel7.Location = new System.Drawing.Point(4, 6);
+            this.acrylicLabel7.Name = "acrylicLabel7";
+            this.acrylicLabel7.Size = new System.Drawing.Size(114, 26);
+            this.acrylicLabel7.TabIndex = 1;
+            this.acrylicLabel7.Text = "Fulfilled.cc";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BlurColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(902, 552);
+            this.Controls.Add(this.acrylicPanel9);
             this.Controls.Add(this.acrylicListView1);
             this.Controls.Add(this.acrylicPanel8);
             this.Controls.Add(this.acrylicPanel6);
@@ -255,6 +281,8 @@
             this.acrylicPanel6.ResumeLayout(false);
             this.acrylicPanel7.ResumeLayout(false);
             this.acrylicPanel8.ResumeLayout(false);
+            this.acrylicPanel9.ResumeLayout(false);
+            this.acrylicPanel9.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -278,5 +306,7 @@
         private AcrylicUI.Controls.AcrylicPanel acrylicPanel8;
         private AcrylicUI.Controls.AcrylicListView acrylicListView3;
         private AcrylicUI.Controls.AcrylicListView acrylicListView1;
+        private AcrylicUI.Controls.AcrylicPanel acrylicPanel9;
+        private AcrylicUI.Controls.AcrylicLabel acrylicLabel7;
     }
 }
