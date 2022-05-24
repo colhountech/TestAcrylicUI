@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App3AcrylicUI", "App3Acryli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcrylicUI", "..\GitHub\colhountech\AcrylicUI\AcrylicUI\AcrylicUI.csproj", "{3284C9F6-2E3A-427F-8DAF-460D0AD3C9EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App4AcrylicUI", "App4AcrylicUI\App4AcrylicUI.csproj", "{4BB95069-9EF4-4578-A5F1-3350A3C2EC44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App4AcrylicUI", "App4AcrylicUI\App4AcrylicUI.csproj", "{4BB95069-9EF4-4578-A5F1-3350A3C2EC44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App5AcrylicUI", "App5AcrylicUI\App5AcrylicUI.csproj", "{A02C0620-4988-44BE-A102-DB07C62460B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4BB95069-9EF4-4578-A5F1-3350A3C2EC44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BB95069-9EF4-4578-A5F1-3350A3C2EC44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BB95069-9EF4-4578-A5F1-3350A3C2EC44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A02C0620-4988-44BE-A102-DB07C62460B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A02C0620-4988-44BE-A102-DB07C62460B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A02C0620-4988-44BE-A102-DB07C62460B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A02C0620-4988-44BE-A102-DB07C62460B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
