@@ -19,6 +19,10 @@ namespace App4AcrylicUI
         public Form1()
         {
             InitializeComponent();
+            // Make sure you set this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            // Program.cs : Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+
             this.Text = "";
             this.IsAcrylic = true;
             this.BlurColor = Colors.GreyBackground; // This keeps getting overwritten when you change Designer properties

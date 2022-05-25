@@ -9,6 +9,10 @@ namespace App5AcrylicUI
         public Form1()
         {
             InitializeComponent();
+            // Make sure you set this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            // Program.cs : Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+
             this.Text = "";
             this.BackColor = Colors.GreyBackground;
             this.IsAcrylic = true;

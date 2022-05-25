@@ -20,6 +20,7 @@ namespace App1AcrylicUI
             this.Text = "";
             this.IsAcrylic = true;
             this.BlurColor = Colors.GreyBackground; // This keeps getting overwritten when you change Designer properties
+            this.AutoScaleMode = AutoScaleMode.Dpi;
 
         }
 

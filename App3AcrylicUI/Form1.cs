@@ -21,6 +21,10 @@ namespace App3AcrylicUI
         public Form1()
         {
             InitializeComponent();
+            // Make sure you set this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            // Program.cs : Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+
             SetupUIDefaults();
             HookEvents();
 
